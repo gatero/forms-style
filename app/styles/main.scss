@@ -1,0 +1,11 @@
+@import 'bootstrap-theme/bootstrap-config';
+@import 'bootstrap-theme/bootstrap-theme';
+
+@import 'utils/mixins';
+
+@import 'layout/global';
+@import 'layout/header';
+@import 'layout/template';
+@import 'layout/footer';
+
+@import 'pages/home';

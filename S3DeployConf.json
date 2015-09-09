@@ -1,0 +1,30 @@
+{
+  "BUCKET_NAME": "test-vo",
+  "AwsConfig": "./AWSConf.json",
+
+  "styles": {
+    "local" : "./dist/styles/",
+    "remote": "dist/styles/",
+    "help": "Mensaje de ayuda para esta option"
+  },
+
+  "scripts" : {
+    "local" : "./dist/scripts/",
+    "remote": "dist/scrpts/"
+  },
+
+  "images" : {
+    "local": "./dist/images/",
+    "remote": "dist/images/"
+  },
+
+  "bower": {
+    "local" : "./dist/bower_components/",
+    "remote": "dist/bower_components/"
+  },
+
+  "update_all": {
+    "local" : "./dist/",
+    "remote": "dist/"
+  }
+}

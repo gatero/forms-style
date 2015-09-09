@@ -1,0 +1,12 @@
+{
+  "name": "package",
+  "version": "0.0.0",
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "jquery-ui": "~1.11.4",
+    "boostrap-sass": "~3.3.5",
+    "font-awesome": "~4.3.0",
+    "modernizr": "~2.8.3"
+  },
+  "devDependencies": {}
+}
