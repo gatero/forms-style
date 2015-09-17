@@ -158,8 +158,8 @@ gulp.task('clean', function(cb) {
   del(['build'], cb);
 });
 
-gulp.task('watch', ['coffee','scss-lint','styles','images','jade', 'bower'], function() {
-  gulp.watch(config.app+'/**/*.scss', ['scss-lint','styles']);
+gulp.task('watch', ['coffee','styles','images','jade', 'bower'], function() {
+  gulp.watch(config.app+'/**/*.scss', ['styles']);
   gulp.watch(config.app+'/scripts/*.coffee', ['coffee']);
   gulp.watch(config.app+'/images/**/*', ['images']);
   gulp.watch(config.app+'/**/*.jade', ['jade']);

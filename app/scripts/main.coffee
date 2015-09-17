@@ -1,1 +1,1 @@
-#=include components/prueba.coffee
+#=include components/switch.coffee

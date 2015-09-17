@@ -1,0 +1,242 @@
+$color_mercury: #e3e3e3;
+$white: #fff;
+
+.bootstrap-switch {
+  border: 0;
+  border-radius: 20px;
+  min-width: 74px;
+  background-clip: padding-box;
+  &.bootstrap-switch-focused {
+    box-shadow: none;
+  }
+  .bootstrap-switch-handle-on {
+    padding-left: 6px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    &.bootstrap-switch-primary {
+      background: $brand-primary;
+    }
+  }
+  .bootstrap-switch-handle-off {
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-right: 6px;
+    &.bootstrap-switch-default {
+      background: $color_mercury;
+    }
+  }
+  .bootstrap-switch-container {
+    position: relative;
+    z-index: 1;
+  }
+  &.bootstrap-switch-off {
+    .bootstrap-switch-label {
+      background: $color_mercury;
+      border-bottom-left-radius: 20px;
+      border-top-left-radius: 20px;
+      &:after {
+        border-color: $color_mercury;
+        left: 0;
+      }
+    }
+  }
+  &.bootstrap-switch-on {
+    .bootstrap-switch-label {
+      background: $brand-primary;
+      border-bottom-right-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+  }
+  .bootstrap-switch-label {
+    position: relative;
+    &:after {
+      content: " ";
+      display: block;
+      width: 29px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: $white;
+      border-radius: 50%;
+      border: 3px solid $brand-primary;
+    }
+  }
+  &.bootstrap-switch-large {
+    min-width: 100px;
+    .bootstrap-switch-label:after {
+      width: 42px;
+      border-width: 4px;
+    }
+    &.bootstrap-switch-on .bootstrap-switch-label:after {
+      border-width: 4px;
+    }
+  }
+  &.bootstrap-switch-small {
+    min-width: 60px;
+    .bootstrap-switch-label:after {
+      width: 25px;
+    }
+  }
+  &.bootstrap-switch-mini {
+    min-width: 44px;
+    .bootstrap-switch-label:after {
+      width: 18px;
+    }
+  }
+  &.bootstrap-switch-onclr-success {
+    &.bootstrap-switch-on {
+      .bootstrap-switch-handle-on {
+        background: $brand-success;
+      }
+      .bootstrap-switch-label {
+        background: $brand-success;
+        &:after {
+          border-color: $brand-success;
+        }
+      }
+    }
+  }
+  &.bootstrap-switch-onclr-info {
+    &.bootstrap-switch-on {
+      .bootstrap-switch-handle-on {
+        background: $brand-info;
+      }
+      .bootstrap-switch-label {
+        background: $brand-info;
+        &:after {
+          border-color: $brand-info;
+        }
+      }
+    }
+  }
+  &.bootstrap-switch-onclr-warning {
+    &.bootstrap-switch-on {
+      .bootstrap-switch-handle-on {
+        background: $brand-warning;
+      }
+      .bootstrap-switch-label {
+        background: $brand-warning;
+        &:after {
+          border-color: $brand-warning;
+        }
+      }
+    }
+  }
+  &.bootstrap-switch-onclr-danger {
+    &.bootstrap-switch-on {
+      .bootstrap-switch-handle-on {
+        background: $brand-danger;
+      }
+      .bootstrap-switch-label {
+        background: $brand-danger;
+        &:after {
+          border-color: $brand-danger;
+        }
+      }
+    }
+  }
+  &.bootstrap-switch-onclr-default {
+    &.bootstrap-switch-on {
+      .bootstrap-switch-handle-on {
+        background: $color_mercury;
+      }
+      .bootstrap-switch-label {
+        background: $color_mercury;
+        &:after {
+          border-color: $color_mercury;
+        }
+      }
+    }
+  }
+  &.bootstrap-switch-offclr-primary {
+    &.bootstrap-switch-off {
+      .bootstrap-switch-handle-off {
+        background: $brand-primary;
+      }
+      .bootstrap-switch-label {
+        background: $brand-primary;
+        &:after {
+          border-color: $brand-primary;
+        }
+      }
+    }
+  }
+  &.bootstrap-switch-offclr-info {
+    &.bootstrap-switch-off {
+      .bootstrap-switch-handle-off {
+        background: $brand-info;
+      }
+      .bootstrap-switch-label {
+        background: $brand-info;
+        &:after {
+          border-color: $brand-info;
+        }
+      }
+    }
+  }
+  &.bootstrap-switch-offclr-success {
+    &.bootstrap-switch-off {
+      .bootstrap-switch-handle-off {
+        background: $brand-success;
+      }
+      .bootstrap-switch-label {
+        background: $brand-success;
+        &:after {
+          border-color: $brand-success;
+        }
+      }
+    }
+    &.bootstrap-switch-on .bootstrap-switch-container {
+      background: $brand-success;
+    }
+  }
+  &.bootstrap-switch-offclr-warning {
+    &.bootstrap-switch-off {
+      .bootstrap-switch-handle-off {
+        background: $brand-warning;
+      }
+      .bootstrap-switch-label {
+        background: $brand-warning;
+        &:after {
+          border-color: $brand-warning;
+        }
+      }
+    }
+    &.bootstrap-switch-on .bootstrap-switch-container {
+      background: $brand-warning;
+    }
+  }
+  &.bootstrap-switch-offclr-danger {
+    &.bootstrap-switch-off {
+      .bootstrap-switch-handle-off {
+        background: $brand-danger;
+      }
+      .bootstrap-switch-label {
+        background: $brand-danger;
+        &:after {
+          border-color: $brand-danger;
+        }
+      }
+    }
+    &.bootstrap-switch-on .bootstrap-switch-container {
+      background: $brand-danger;
+    }
+  }
+  &.bootstrap-switch-offclr-default {
+    &.bootstrap-switch-off {
+      .bootstrap-switch-handle-off {
+        background: $color_mercury;
+      }
+      .bootstrap-switch-label {
+        background: $color_mercury;
+        &:after {
+          border-color: $color_mercury;
+        }
+      }
+    }
+    &.bootstrap-switch-on .bootstrap-switch-container {
+      background: $color_mercury;
+    }
+  }
+}
